@@ -3,7 +3,7 @@ import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import "@fontsource-variable/inter/index.css";
-import '@fontsource-variable/bricolage-grotesque';
+import '@fontsource-variable/roboto-flex';
 
 
 
@@ -19,10 +19,12 @@ const resolvedImageWithDomain = new URL(
 ).toString();
 
 const { title } = Astro.props;
+const tagline = "Build momentum-preserving software tools for scientific progress"
+const twitter = "@ryrobyrne"
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? title + " | " + tagline
+  : "Flywheel | Build momentum-preserving software tools for scientific progress";
 ---
 
 <!DOCTYPE html>
@@ -35,11 +37,11 @@ const makeTitle = title
 
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
-      title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      title={title}
+      description=makeTitle
       canonical={canonicalURL}
       twitter={{
-        creator: "@surjithctly",
+        creator: twitter,
         site: "@web3templates",
         card: "summary_large_image",
       }}
@@ -47,11 +49,11 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: makeTitle,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Flywheel",
         },
       }}
     />
