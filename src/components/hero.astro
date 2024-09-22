@@ -6,13 +6,23 @@ import { Icon } from "astro-icon/components";
 ---
 
 <main
-  class="grid lg:grid-cols-3 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="col-span-2">
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  <div class="py-6 md:order-1 hidden md:block">
+    <Picture
+      src={heroImage}
+      alt="Flywheel Logo"
+      widths={[200, 400, 600]}
+      sizes="(max-width: 800px) 100vw, 620px"
+      loading="eager"
+      format="avif"
+    />
+  </div>
+  <div>
     <h1
-      class="text-6xl lg:text-7xl xl:text-8xl font-bold lg:tracking-tight xl:tracking-tighter">
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
       Build momentum-preserving tools for scientific progress.
     </h1>
-    <p class="text-xl mt-6 text-text max-w-2xl">
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
       Astroship is a starter template for startups, marketing websites & landing
       pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly
       create any website with this starter.
@@ -39,15 +49,5 @@ import { Icon } from "astro-icon/components";
          GitHub Repo
       </Link>
     </div>
-  </div>
-  <div class="py-6 md:order-1 hidden md:block">
-    <Picture
-      src={heroImage}
-      alt="Flywheel Logo"
-      widths={[150, 300, 450]}
-      sizes="(max-width: 800px) 100vw, 400px"
-      loading="eager"
-      format="avif"
-    />
   </div>
 </main>
