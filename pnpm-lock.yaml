@@ -26,6 +26,9 @@ importers:
       '@fontsource-variable/roboto-flex':
         specifier: ^5.0.17
         version: 5.0.17
+      '@fontsource/roboto-mono':
+        specifier: ^5.1.0
+        version: 5.1.0
       '@iconify-json/bx':
         specifier: ^1.1.10
         version: 1.1.10
@@ -571,6 +574,9 @@ packages:
 
   '@fontsource-variable/roboto-flex@5.0.17':
     resolution: {integrity: sha512-ID4+ej354VuBnuz5vtR66uVBNel1qe3lCOdx/ylST8qQGdjy/IQy8wxkUvyX+FqWHWHslPCq9vG2cMOqLpRpyQ==}
+
+  '@fontsource/roboto-mono@5.1.0':
+    resolution: {integrity: sha512-7lIxTeanF2XrwAIukUrOUvO9veGkQiG7L7vizMxVjl+lrTwS4GAYyOvziyGZ6/3kU80K3lGd/FnWrmoTud0V6A==}
 
   '@iconify-json/bx@1.1.10':
     resolution: {integrity: sha512-4JzMDYhs/hkU9mO8nNMNKZwHn706oQaD46URyUuD4fP/XAWGf01vg6wKITmQseEHsHDrtKAXjwcumfnTUDi3OQ==}
@@ -3453,6 +3459,8 @@ snapshots:
   '@fontsource-variable/inter@5.0.18': {}
 
   '@fontsource-variable/roboto-flex@5.0.17': {}
+
+  '@fontsource/roboto-mono@5.1.0': {}
 
   '@iconify-json/bx@1.1.10':
     dependencies:
