@@ -57,9 +57,13 @@ const makeTitle = title
       }}
     />
   </head>
-  <body class="bg-background text-text font-sans">
-    <Navbar />
-    <slot />
+  <body class="bg-background text-text font-sans flex flex-col min-h-screen">
+    <div class="flex-grow">
+      <Navbar />
+      <main>
+        <slot />
+      </main>
+    </div>
     <Footer />
     <style is:global>
       /* Improve Page speed */
@@ -69,6 +73,15 @@ const makeTitle = title
       }
       h1, h2, h3, h4, h5, h6 {
         @apply font-mono;
+      }
+      /* Sticky footer styles */
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        flex: 1;
       }
     </style>
   </body>
