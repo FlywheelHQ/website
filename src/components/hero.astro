@@ -6,8 +6,8 @@ import { Icon } from "astro-icon/components";
 ---
 
 <main
-  class="grid lg:grid-cols-3 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
+  class="grid lg:grid-cols-5 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  <div class="py-6 md:order-1 hidden md:block col-span-2">
     <Picture
       src={heroImage}
       alt="Flywheel Logo"
@@ -17,7 +17,7 @@ import { Icon } from "astro-icon/components";
       format="avif"
     />
   </div>
-  <div class="col-span-2">
+  <div class="col-span-3">
     <h1
       class="text-4xl text-text lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter font-mono">
       <!-- Build momentum-preserving tools for scientific progress. -->
