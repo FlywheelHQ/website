@@ -2,8 +2,8 @@
 import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
-import "@fontsource-variable/inter/index.css";
 import '@fontsource-variable/roboto-flex';
+import '@fontsource/roboto-mono';
 
 export interface Props {
   title: string;
@@ -57,7 +57,7 @@ const makeTitle = title
       }}
     />
   </head>
-  <body class="bg-background text-text">
+  <body class="bg-background text-text font-sans">
     <Navbar />
     <slot />
     <Footer />
@@ -66,6 +66,9 @@ const makeTitle = title
       /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
       img {
         content-visibility: auto;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Roboto Mono', monospace;
       }
     </style>
   </body>
