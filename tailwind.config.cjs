@@ -12,6 +12,10 @@ module.exports = {
                     "Inter",
                     ...defaultTheme.fontFamily.sans,
                 ],
+                mono: [
+                    "Roboto Mono",
+                    ...defaultTheme.fontFamily.mono,
+                ],
             },
             colors: {
                 background: {
