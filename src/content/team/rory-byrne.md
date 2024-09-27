@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Rory Byrne"
-title: "Founder"
+title: "Core"
 avatar: {
     src: "/rory-byrne.jpeg",
     alt: "Rory Byrne"
